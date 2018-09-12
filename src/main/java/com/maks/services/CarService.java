@@ -10,7 +10,5 @@ public interface CarService {
 
     List<Car> findAllCars();
 
-//    List<Car> listCars(List<Long> ids);
-
     List<Car> getCarsByOwner(Long id);
 }

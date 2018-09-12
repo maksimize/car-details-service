@@ -25,14 +25,9 @@ public class CarServiceImpl implements CarService {
         return this.carRepository.findAll();
     }
 
-//    @Override
-//    public List<Car> listCars(List<Long> ids) {
-//        return this.carRepository.findListOfCars(ids);
-//    }
 
     @Override
     public List<Car> getCarsByOwner(Long id) {
-//        return this.carRepository.findByVehicleId("YS2R4X20005399401");
         return this.carRepository.findByOwnerId(id);
     }
 }

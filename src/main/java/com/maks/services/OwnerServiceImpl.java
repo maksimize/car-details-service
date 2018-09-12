@@ -8,36 +8,25 @@ import org.hibernate.annotations.Where;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class OwnerServiceImpl implements OwnerService {
 
-    private CarRepository carRepository ;
     private OwnerRepository ownerRepository;
 
-    public OwnerServiceImpl(CarRepository carRepository, OwnerRepository ownerRepository) {
-        this.carRepository = carRepository;
+    public OwnerServiceImpl(OwnerRepository ownerRepository) {
         this.ownerRepository = ownerRepository;
     }
 
     @Override
-    public Owner findById(Long id) {
-        return this.ownerRepository.findById(id).get();
+    public Optional<Owner> findById(Long id) {
+        return this.ownerRepository.findById(id);
     }
-
 
     @Override
     public List<Owner> findAll() {
         return ownerRepository.findAll();
     }
 
-    @Override
-    public List<Owner> findByIds(List<Long> ids) {
-        return this.ownerRepository.findByIdIn(ids);
-    }
-
-//    @Override
-//    public List<Owner> findByVehicleId(List<Long> ids) {
-//        return this.ownerRepository.findByCarVehicleIdIn(ids);
-//    }
 }

@@ -1,8 +1,6 @@
 package com.maks.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import lombok.Data;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;

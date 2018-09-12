@@ -8,6 +8,6 @@ public class CarDetailsServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CarDetailsServiceApplication.class, args);
-		System.out.println("=====MAKS====");
+		System.out.println("=====Car Details service App starts====");
 	}
 }
