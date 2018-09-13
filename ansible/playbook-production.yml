@@ -13,7 +13,7 @@
           PORT: 80
           DS_URL: jdbc:postgresql://postgres:5432/cars
           DS_USERNAME: cars
-          DS_PASSWWORD: carscars
+          DS_PASSWORD: carscars
           DS_DRIVER: org.postgresql.Driver
         ports:
          - "80:80"
