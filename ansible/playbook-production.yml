@@ -11,7 +11,7 @@
         image: 409506722486.dkr.ecr.ap-southeast-1.amazonaws.com/car-details-service
         env:
           PORT: 80
-          DS_URL: jdbc:postgresql://postgres:5432/cars
+          DS_URL: jdbc:postgresql://carownerdetails.cetj7fswuuou.ap-southeast-1.rds.amazonaws.com:5432/cars
           DS_USERNAME: cars
           DS_PASSWORD: carscars
           DS_DRIVER: org.postgresql.Driver
